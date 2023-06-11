@@ -42,6 +42,34 @@
 .action-btn-cont{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-size: 1.5rem;
+}
+.add-new-cont{
+    height: 50vh;
+    width: 50vw;
+    background-color: lightgray;
+    display: flex;
+}
+.textarea-cont{
+    width: 75%;
+    /* height: 100%; */
+    outline: none;
+    border: none;
+    resize: none;
+    background-color: antiquewhite;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.priority-selector{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.priority-btn{
+    height: 3rem;
+    width: 5rem;
 }
