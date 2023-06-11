@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.toolbox-cont{
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.toolbox-priority-cont{
+    height: 3rem;
+    width: 20rem;
+    background-color: gray;
+    margin-left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.action-btn-cont{
+    height: 3rem;
+    width: 10rem;
+    background-color: gray;
+    margin-left: 5rem;
+}
+.color{
+    height: 1.5rem;
+    width: 3rem;
+}
+.red{
+    background-color:red;
+}
+.blue{
+    background-color:blue;
+}
+.green{
+    background-color:green;
+}
+.black{
+    background-color:black;
+}
+.action-btn-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
