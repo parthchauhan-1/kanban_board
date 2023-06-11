@@ -73,3 +73,26 @@
     height: 3rem;
     width: 5rem;
 }
+.main-cont{
+    /* margin-top: 5rem; */
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.ticket-body{
+    background-color: aliceblue;
+    height: 10rem;
+    width: 15rem;
+}
+.ticket-color{
+    height: 1rem;
+}
+.ticket-id{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.ticket-desc{
+    font-size: 1.3rem;
+}
