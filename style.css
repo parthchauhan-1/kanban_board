@@ -97,6 +97,7 @@ body{
     background-color: aliceblue;
     height: 10rem;
     width: 15rem;
+    
 }
 .ticket-color{
     height: 1rem;
@@ -104,6 +105,7 @@ body{
 .ticket-id{
     font-weight: 700;
     font-size: 1.2rem;
+    text-align: center;
 }
 .ticket-desc{
     font-size: 1.3rem;
