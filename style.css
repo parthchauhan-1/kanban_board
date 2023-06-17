@@ -83,6 +83,12 @@ body{
     height: 3rem;
     width: 5rem;
 }
+.lock-unlock{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+}
 .main-cont{
     /* margin-top: 5rem; */
     padding: 2rem;
@@ -97,6 +103,8 @@ body{
     background-color: aliceblue;
     height: 10rem;
     width: 15rem;
+    position: relative;
+    
     
 }
 .ticket-color{
@@ -109,6 +117,10 @@ body{
 }
 .ticket-desc{
     font-size: 1.3rem;
+    overflow: auto;
+    padding: 0.5rem;
+    outline: none;
+    word-break: break-all;
 }
 .active{
     border: 5px solid white;
