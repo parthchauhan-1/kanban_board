@@ -7,10 +7,10 @@ let main_cont=document.querySelector(".main-cont");
 let delete_btn=document.querySelector(".remove-btn");
 let colorOrder=["red","blue","green","black"];
 let createTaskPriority="black";
+let priorityFilters=document.querySelectorAll(".color");
 var uid = new ShortUniqueId();
 let box_visible=true;
 let deleteFlag=false;
-
 
 
 
@@ -37,6 +37,32 @@ for(let j=0;j<priority_btn.length;j++){
         createTaskPriority=priority_btn[j].classList[1];
     })
 }
+for(let i=0;i<priorityFilters.length;i++){
+    priorityFilters[i].addEventListener("click",function(){
+        // console.log("Check");
+        let seletedPriority=priorityFilters[i].classList[1];
+        // console.log(seletedPriority);
+        let allTicketsColors= document.querySelectorAll(".ticket-color");
+        for(let j=0;j<allTicketsColors.length;j++){
+            let currentTicketColor=allTicketsColors[j].classList[1];
+            // console.log(currentTicketColor);
+            if (seletedPriority==currentTicketColor) {
+                allTicketsColors[j].parentElement.style.display="block";
+            } else {
+                allTicketsColors[j].parentElement.style.display="none";
+            }
+        }
+    })
+    
+    priorityFilters[i].addEventListener("dblclick",function(){
+        console.log("DBL");
+        let allTicketBody=document.querySelectorAll(".ticket-body");
+        for(let i=0;i<allTicketBody.length;i++){
+            allTicketBody[i].style.display="block";
+        }
+    })
+
+}
 function createTask(task,createTaskPriority){
     if (task=="") {
         return;
@@ -49,6 +75,7 @@ function createTask(task,createTaskPriority){
             <div class="ticket-desc">${task}</div>
             <div class="lock-unlock"><i class="fa-solid fa-lock"></i></div>`;
     main_cont.appendChild(ticket_body);
+
 
     handleDelete(ticket_body);
     handleLockUnlock(ticket_body);
